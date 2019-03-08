@@ -13,7 +13,7 @@ class User(db.Model, BaseModel):
     username = db.Column(db.String(20), nullable=False)
     email = db.Column(db.String(100), nullable=False)
     password_hash = db.Column(db.String(128), nullable=True)
-    avatar = db.Column(db.String(200), nullable=False)
+    avatar = db.Column(db.String(200), nullable=True)
 
     @hybrid_property
     def password(self):
