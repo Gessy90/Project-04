@@ -10,13 +10,11 @@ recipe_schema = RecipeSchema()
 comment_schema = CommentSchema()
 
 @api.route('/recipes', methods=['GET'])
-@secure_route
 def index():
     recipes = Recipe.query.all()
     return recipes_schema.jsonify(recipes)
 
 @api.route('/recipes/<int:recipe_id>', methods=['GET'])
-@secure_route
 def show(recipe_id):
     recipe = Recipe.query.get(recipe_id)
     return recipe_schema.jsonify(recipe)

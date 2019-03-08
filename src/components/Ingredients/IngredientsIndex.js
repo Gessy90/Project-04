@@ -51,6 +51,7 @@ class IngredientsIndex extends React.Component {
   }
 
   render(){
+    console.log(this.state, 'STATE HERE')
     if(!this.state.ingredients) return <h1>Loading...</h1>
     console.log(this.state.ingredients)
     return(
