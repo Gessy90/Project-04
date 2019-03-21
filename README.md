@@ -1,4 +1,4 @@
-# WDI - Project-04
+# WDI - Project-4
 
 # General Assembly Project 4: Eat Something - an app for parents of fussy eaters.
 
